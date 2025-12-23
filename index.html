@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#07080b" />
+  <title>PULSE EMS Studio — Allenamento EMS premium</title>
+  <meta name="description" content="Centro EMS tecnologico e luxury: sessioni rapide, coach dedicato e prenotazioni online." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta property="og:title" content="PULSE EMS Studio — Allenamento EMS premium" />
+  <meta property="og:description" content="Centro EMS tecnologico e luxury: sessioni rapide, coach dedicato e prenotazioni online." />
+  <meta property="og:type" content="website" />
+</head>
+<body class="is-loading">
+  <!-- Morph transition overlay -->
+  <div id="transition" class="transition" aria-hidden="true">
+    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+      <path id="transitionPath" d="M0,0H1000V1000H0Z"></path>
+    </svg>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <a class="brand" href="index.html" data-transition aria-label="PULSE EMS Studio">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-title">
+            <strong>PULSE EMS Studio</strong>
+            <span>Tech • Luxury • Result</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navigazione principale">
+          <ul>
+            <li><a href="index.html" data-nav data-transition>Home</a></li>
+            <li><a href="about.html" data-nav data-transition>Chi siamo</a></li>
+            <li><a href="ems.html" data-nav data-transition>Cos'è EMS</a></li>
+            <li><a href="services.html" data-nav data-transition>Servizi</a></li>
+            <li><a href="packages.html" data-nav data-transition>Pacchetti</a></li>
+            <li><a href="contact.html" data-nav data-transition>Contatti</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn primary js-book" href="#" aria-label="Prenota online">Prenota</a>
+          <button id="mobileBtn" class="hamburger" aria-label="Apri menu" aria-expanded="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="mobile-menu" aria-label="Menu mobile">
+        <a href="index.html" data-transition>Home</a>
+        <a href="about.html" data-transition>Chi siamo</a>
+        <a href="ems.html" data-transition>Cos'è EMS</a>
+        <a href="services.html" data-transition>Servizi</a>
+        <a href="packages.html" data-transition>Pacchetti</a>
+        <a href="contact.html" data-transition>Contatti</a>
+        <a class="js-book" href="#">Prenota online</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+<section class="hero">
+  <div class="glow" aria-hidden="true"></div>
+  <svg class="hero-blob" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="pulseGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="rgba(49,231,211,.55)"/>
+      <stop offset=".55" stop-color="rgba(215,181,109,.44)"/>
+      <stop offset="1" stop-color="rgba(122,92,255,.46)"/>
+    </linearGradient>
+  </defs>
+  <path id="heroBlobPath" d="M0,160 C180,40 320,10 500,80 C690,155 820,30 1000,120 V1000 C820,900 620,1030 430,970 C240,910 120,1040 0,920 Z"></path>
+</svg>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="badge"><i></i><span class="kicker">Allenamento EMS premium</span></div>
+        <h1>Tecnologia. Lusso. <span style="background:linear-gradient(90deg, rgba(49,231,211,.95), rgba(215,181,109,.92)); -webkit-background-clip:text;background-clip:text;color:transparent">Risultati.</span></h1>
+        <p class="lead">Con PULSE EMS Studio ottieni un allenamento completo in <strong>20 minuti</strong>, con coach dedicato e un’esperienza di qualità: essenziale, intuitiva, efficace.</p>
+        <div class="hero-actions">
+          <a class="btn primary js-book" href="#">Prenota la tua prova</a>
+          <a class="btn" href="ems.html" data-transition>Scopri cos'è EMS</a>
+          <a class="btn gold" href="packages.html" data-transition>Vedi i pacchetti</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>20'</strong><span>Sessione rapida e intensa</span></div>
+          <div class="stat"><strong>1–2x</strong><span>A settimana per risultati</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h2>Prenota online in 30 secondi</h2>
+        <p>Agenda in tempo reale tramite Setmore: scegli giorno e orario, conferma e sei a posto.</p>
+        <div class="hr"></div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M8 7V3m8 4V3M4 11h16M6 21h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Flessibile</h3>
+            <p class="small">Slot disponibili, reminder, gestione facile.</p>
+          </div>
+          <div class="card">
+            <div class="icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Controllato</h3>
+            <p class="small">Protocollo, progressione, sicurezza.</p>
+          </div>
+        </div>
+        <div class="hero-actions" style="margin-top:14px">
+          <a class="btn primary js-book" href="#">Vai alle prenotazioni</a>
+          <a class="btn" href="contact.html" data-transition>Contatti</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="head">
+      <div>
+        <div class="kicker">Perché scegliere PULSE</div>
+        <h2>Un’esperienza EMS pensata per essere chiara e “premium”</h2>
+      </div>
+      <a class="btn" href="about.html" data-transition>Chi siamo</a>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2v8l6 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 22h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Tecnologia e metodo</h3>
+        <p>Stimolazione mirata, tempi ottimizzati, progressione misurabile: niente improvvisazione.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 21V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 3v4m8-4v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Coach dedicato</h3>
+        <p>Sessione guidata, correzioni, motivazione e personalizzazione in base ai tuoi obiettivi.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l9 7-9 7-9-7 9-7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M3 10v8l9 3 9-3v-8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Studio luxury</h3>
+        <p>Ambiente curato, pulito, discreto. Vieni, ti alleni, esci: semplice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="head">
+      <div>
+        <div class="kicker">Workflow</div>
+        <h2>Come funziona una seduta</h2>
+      </div>
+      <a class="btn gold" href="services.html" data-transition>Vedi i servizi</a>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3>1) Valutazione</h3>
+        <p>Obiettivo, anamnesi rapida, settaggi iniziali. Se serve, adattiamo tutto al tuo livello.</p>
+      </div>
+      <div class="card">
+        <h3>2) EMS + esercizi</h3>
+        <p>Stimoli elettrici sincronizzati con movimenti guidati. Intensità controllata dal coach.</p>
+      </div>
+      <div class="card">
+        <h3>3) Recupero</h3>
+        <p>Defaticamento e feedback. Si traccia il percorso per rendere i progressi “inevitabili”.</p>
+      </div>
+    </div>
+    <div class="notice" style="margin-top:14px">
+      Vuoi fare la prima prova? Prenota online e scegli lo slot migliore per te.
+      <span style="display:inline-block;margin-left:10px"><a class="btn primary js-book" href="#">Prenota</a></span>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="badge"><i></i><span class="kicker">PULSE EMS Studio</span></div>
+          <p style="margin-top:12px">Allenamento EMS premium: sessioni rapide, coach dedicato, ambiente tecnologico e curato. Zero fronzoli, focus su risultati.</p>
+          <div class="notice" style="margin-top:12px">
+            <strong style="color:rgba(255,255,255,.92)">Nota sicurezza:</strong>
+            EMS non adatto a tutti (es. pacemaker, gravidanza, alcune patologie). Valutazione iniziale consigliata.
+          </div>
+        </div>
+
+        <div>
+          <h4>Contatti</h4>
+          <p class="small" style="margin:0 0 10px">
+            <strong>Indirizzo:</strong> Via Roma 21, 46018 Sabbioneta (MN)<br>
+            <strong>Telefono:</strong> +39 000 000 0000<br>
+            <strong>Email:</strong> info@pulseems.it
+          </p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="tel:+390000000000">Chiama</a>
+            <a class="btn" href="mailto:info@pulseems.it">Email</a>
+            <a class="btn gold" href="https://www.google.com/maps?q=Via+Roma+21+46018+Sabbioneta+MN" target="_blank" rel="noopener">Apri mappa</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Link rapidi</h4>
+          <p class="small" style="margin:0 0 10px">
+            <a href="packages.html" data-transition>Piani & pacchetti</a><br>
+            <a href="services.html" data-transition>Servizi</a><br>
+            <a href="ems.html" data-transition>Come funziona EMS</a><br>
+            <a class="js-book" href="#">Prenotazioni online</a>
+          </p>
+          <h4 style="margin-top:14px">Social</h4>
+          <p class="small" style="margin:0">
+            <a href="#" target="_blank" rel="noopener">Instagram</a> ·
+            <a href="#" target="_blank" rel="noopener">TikTok</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 PULSE EMS Studio — Tutti i diritti riservati.</span>
+        <span class="small">Sito statico (gratuito) · Pubblicabile su GitHub Pages / Netlify</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- libs (free) -->
+  <script src="https://unpkg.com/flubber@0.4.2/build/flubber.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

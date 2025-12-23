@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#07080b" />
+  <title>Contatti — PULSE EMS Studio</title>
+  <meta name="description" content="Contatti, mappa e prenotazioni online Setmore per PULSE EMS Studio." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta property="og:title" content="Contatti — PULSE EMS Studio" />
+  <meta property="og:description" content="Contatti, mappa e prenotazioni online Setmore per PULSE EMS Studio." />
+  <meta property="og:type" content="website" />
+</head>
+<body class="is-loading">
+  <!-- Morph transition overlay -->
+  <div id="transition" class="transition" aria-hidden="true">
+    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+      <path id="transitionPath" d="M0,0H1000V1000H0Z"></path>
+    </svg>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <a class="brand" href="index.html" data-transition aria-label="PULSE EMS Studio">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-title">
+            <strong>PULSE EMS Studio</strong>
+            <span>Tech • Luxury • Result</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navigazione principale">
+          <ul>
+            <li><a href="index.html" data-nav data-transition>Home</a></li>
+            <li><a href="about.html" data-nav data-transition>Chi siamo</a></li>
+            <li><a href="ems.html" data-nav data-transition>Cos'è EMS</a></li>
+            <li><a href="services.html" data-nav data-transition>Servizi</a></li>
+            <li><a href="packages.html" data-nav data-transition>Pacchetti</a></li>
+            <li><a href="contact.html" data-nav data-transition>Contatti</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn primary js-book" href="#" aria-label="Prenota online">Prenota</a>
+          <button id="mobileBtn" class="hamburger" aria-label="Apri menu" aria-expanded="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="mobile-menu" aria-label="Menu mobile">
+        <a href="index.html" data-transition>Home</a>
+        <a href="about.html" data-transition>Chi siamo</a>
+        <a href="ems.html" data-transition>Cos'è EMS</a>
+        <a href="services.html" data-transition>Servizi</a>
+        <a href="packages.html" data-transition>Pacchetti</a>
+        <a href="contact.html" data-transition>Contatti</a>
+        <a class="js-book" href="#">Prenota online</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+<section class="page-hero">
+  <svg class="hero-blob" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="pulseGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="rgba(49,231,211,.55)"/>
+      <stop offset=".55" stop-color="rgba(215,181,109,.44)"/>
+      <stop offset="1" stop-color="rgba(122,92,255,.46)"/>
+    </linearGradient>
+  </defs>
+  <path id="heroBlobPath" d="M0,160 C180,40 320,10 500,80 C690,155 820,30 1000,120 V1000 C820,900 620,1030 430,970 C240,910 120,1040 0,920 Z"></path>
+</svg>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html" data-transition>Home</a><span>›</span><span>Contatti</span></div>
+    <h1>Contatti</h1>
+    <p class="lead">Prenota online (Setmore) oppure scrivici: ti rispondiamo in modo diretto e veloce.</p>
+    <div class="hero-actions">
+      <a class="btn primary js-book" href="#">Prenota online</a>
+      <a class="btn gold" href="https://www.google.com/maps?q=Via+Roma+21+46018+Sabbioneta+MN" target="_blank" rel="noopener">Apri la mappa</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2">
+      <div class="card">
+        <h2 style="margin-top:0">Scrivici</h2>
+        <p>Questo modulo è <strong>100% gratuito</strong>: apre la tua app Email con il messaggio già pronto (nessun servizio esterno, zero costi).</p>
+
+        <form class="form" data-mailto="info@pulseems.it">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Nome</label>
+              <input id="name" name="name" placeholder="Il tuo nome" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="nome@email.it" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Messaggio</label>
+            <textarea id="message" name="message" placeholder="Dimmi obiettivo e disponibilità oraria…" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Invia email</button>
+            <a class="btn" href="tel:+390000000000">Chiama</a>
+            <a class="btn" href="mailto:info@pulseems.it">Apri mail</a>
+          </div>
+          <p class="small">Suggerimento: per prenotare più velocemente, usa la prenotazione online.</p>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2 style="margin-top:0">Dove siamo</h2>
+        <p><strong>Via Roma 21, 46018 Sabbioneta (MN)</strong></p>
+        <div class="map-wrap" style="margin-top:12px">
+          <iframe
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Via+Roma+21+46018+Sabbioneta+MN&output=embed">
+          </iframe>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn gold" href="https://www.google.com/maps?q=Via+Roma+21+46018+Sabbioneta+MN" target="_blank" rel="noopener">Apri in Google Maps</a>
+          <a class="btn" href="https://maps.apple.com/?q=Via%20Roma%2021%2046018%20Sabbioneta%20MN" target="_blank" rel="noopener">Apri in Apple Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="badge"><i></i><span class="kicker">PULSE EMS Studio</span></div>
+          <p style="margin-top:12px">Allenamento EMS premium: sessioni rapide, coach dedicato, ambiente tecnologico e curato. Zero fronzoli, focus su risultati.</p>
+          <div class="notice" style="margin-top:12px">
+            <strong style="color:rgba(255,255,255,.92)">Nota sicurezza:</strong>
+            EMS non adatto a tutti (es. pacemaker, gravidanza, alcune patologie). Valutazione iniziale consigliata.
+          </div>
+        </div>
+
+        <div>
+          <h4>Contatti</h4>
+          <p class="small" style="margin:0 0 10px">
+            <strong>Indirizzo:</strong> Via Roma 21, 46018 Sabbioneta (MN)<br>
+            <strong>Telefono:</strong> +39 000 000 0000<br>
+            <strong>Email:</strong> info@pulseems.it
+          </p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="tel:+390000000000">Chiama</a>
+            <a class="btn" href="mailto:info@pulseems.it">Email</a>
+            <a class="btn gold" href="https://www.google.com/maps?q=Via+Roma+21+46018+Sabbioneta+MN" target="_blank" rel="noopener">Apri mappa</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Link rapidi</h4>
+          <p class="small" style="margin:0 0 10px">
+            <a href="packages.html" data-transition>Piani & pacchetti</a><br>
+            <a href="services.html" data-transition>Servizi</a><br>
+            <a href="ems.html" data-transition>Come funziona EMS</a><br>
+            <a class="js-book" href="#">Prenotazioni online</a>
+          </p>
+          <h4 style="margin-top:14px">Social</h4>
+          <p class="small" style="margin:0">
+            <a href="#" target="_blank" rel="noopener">Instagram</a> ·
+            <a href="#" target="_blank" rel="noopener">TikTok</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 PULSE EMS Studio — Tutti i diritti riservati.</span>
+        <span class="small">Sito statico (gratuito) · Pubblicabile su GitHub Pages / Netlify</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- libs (free) -->
+  <script src="https://unpkg.com/flubber@0.4.2/build/flubber.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
